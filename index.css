@@ -1,11 +1,11 @@
 *,
 *::before,
-*::after { 
+*::after {
   box-sizing: border-box;
 }
 
 html:focus-within {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -26,16 +26,72 @@ html:focus-within {
 }
 
 body {
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    margin: 0;
-    font-family: var(--ff);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: var(--ff);
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
+}
+
+.bento-item {
+  display: flex;
+  flex-flow: column;
+}
+
+/* bento item 1 */
+.bento-item-1 {
+  background-color: var(--clr-primary-500);
+  justify-content: center;
+  align-items: center;
+}
+
+.bento-item-1 h1 {
+  color: var(--clr-white);
+}
+
+/* bento item 2 */
+.bento-item-2 {
+  background-color: var(--clr-white);
+}
+
+/* bento item 3 */
+.bento-item-3 {
+  background-color: var(--clr-secondary-500);
+}
+
+/* bento item 4 */
+.bento-item-4 {
+  background-color: var(--clr-primary-100);
+}
+
+/* bento item 5 */
+.bento-item-5 {
+  background-color: var(--clr-primary-500);
+}
+
+/* bento item 6 */
+.bento-item-6 {
+  background-color: var(--clr-white);
+}
+
+/* bento item 7 */
+.bento-item-7 {
+  background-color: var(--clr-secondary-100);
+}
+
+/* bento item 8 */
+.bento-item-8 {
+  background-color: var(--clr-secondary-500);
+  padding: 1rem;
+}
+
+.bento-item-8 img {
+  width: 75%;
 }
