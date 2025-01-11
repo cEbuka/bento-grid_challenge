@@ -43,13 +43,19 @@ img {
 .bento-item {
   display: flex;
   flex-flow: column;
+  max-width: 375px;
+  width: 90%;
+}
+
+.bento-center {
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* bento item 1 */
 .bento-item-1 {
   background-color: var(--clr-primary-500);
-  justify-content: center;
-  align-items: center;
 }
 
 .bento-item-1 h1 {
@@ -84,7 +90,12 @@ img {
 /* bento item 7 */
 .bento-item-7 {
   background-color: var(--clr-secondary-100);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
+
+
+
 
 /* bento item 8 */
 .bento-item-8 {
