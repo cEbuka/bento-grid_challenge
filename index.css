@@ -210,8 +210,29 @@ img {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
   }
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
 
   .grid-col-span-2 {
      grid-column: span 2;
   }
+
+  .grid-row-span-2 {
+    grid-row: span 2;
+  }
+
+  .bento-grid .bento-item:nth-child(7) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .bento-grid .bento-item:nth-child(4) {
+    grid-column: 4;
+  }
+
 }
