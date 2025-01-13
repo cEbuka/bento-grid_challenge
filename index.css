@@ -45,6 +45,7 @@ body {
   line-height: 1;
   font-family: var(--ff);
   background-color: hsl(0, 0%, 95%);
+
 }
 
 img {
@@ -111,7 +112,8 @@ img {
 .bento-grid {
   padding: 1rem;
   display: grid;
-  gap: 1em;
+  gap: 1rem;
+  margin-inline: auto;
 }
 
 .bento-grid > * {
@@ -136,6 +138,7 @@ img {
 
 .bento-grid .bento-item:nth-child(3) {
   padding-inline: 1rem;
+  padding-top: 1rem;
 }
 
 .bento-grid .bento-item:nth-child(3) img {
@@ -202,8 +205,13 @@ img {
 
 /* For tabs */
 
-@media (min-width: 541px) {
+@media (min-width: 540px) {
   .bento-grid {
     grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .grid-col-span-2 {
+     grid-column: span 2;
   }
 }
