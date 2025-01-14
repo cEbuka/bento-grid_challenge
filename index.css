@@ -170,13 +170,14 @@ img {
 }
 
 .bento-grid .bento-item:nth-child(5) {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   text-align: center;
   padding-inline: 2rem;
   padding-block: 1rem;
+
 }
 
 .bento-grid .bento-item:nth-child(5) img {
@@ -219,35 +220,35 @@ img {
   width: 100%;
 }
 
-.bento-item:nth-child(1){
-   grid-area: one;
+.bento-item:nth-child(1) {
+  grid-area: one;
 }
 
-.bento-item:nth-child(2){
+.bento-item:nth-child(2) {
   grid-area: two;
 }
 
-.bento-item:nth-child(3){
+.bento-item:nth-child(3) {
   grid-area: three;
 }
 
-.bento-item:nth-child(4){
+.bento-item:nth-child(4) {
   grid-area: four;
 }
 
-.bento-item:nth-child(5){
+.bento-item:nth-child(5) {
   grid-area: five;
 }
 
-.bento-item:nth-child(6){
+.bento-item:nth-child(6) {
   grid-area: six;
 }
 
-.bento-item:nth-child(7){
+.bento-item:nth-child(7) {
   grid-area: seven;
 }
 
-.bento-item:nth-child(8){
+.bento-item:nth-child(8) {
   grid-area: eight;
 }
 
@@ -262,9 +263,13 @@ img {
       "seven one one four"
       "seven two three four"
       "eight two three four"
-      "eight two three four "
+      "eight two three four"
       "eight six five five"
       "eight six five five"
       "eight six five five";
+  }
+
+  .bento-item:nth-child(5) {
+    flex-direction: column;
   }
 }
