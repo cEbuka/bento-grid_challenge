@@ -256,6 +256,8 @@ img {
 
 @media (min-width: 540px) {
   .bento-grid {
+    max-width: 1440px;
+    margin: 1rem;
     grid-auto-rows: 75px;
     grid-auto-columns: 1fr;
     grid-template-areas:
