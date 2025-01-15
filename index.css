@@ -170,10 +170,10 @@ img {
 }
 
 .bento-grid .bento-item:nth-child(5) {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   text-align: center;
   padding-inline: 2rem;
   padding-block: 1rem;
@@ -256,8 +256,7 @@ img {
 
 @media (min-width: 540px) {
   .bento-grid {
-    max-width: 1440px;
-    margin: 1rem;
+    margin-inline: auto;
     grid-auto-rows: 75px;
     grid-auto-columns: 1fr;
     grid-template-areas:
@@ -274,6 +273,6 @@ img {
   }
 
   .bento-item:nth-child(5) {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
