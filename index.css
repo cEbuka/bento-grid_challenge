@@ -253,8 +253,22 @@ img {
 }
 
 /* For tabs */
+@media (min-width: 500px) {
+	.bento-grid {
+		grid-template-areas:
+		"seven seven seven"
+		"seven seven seven"
+		"one four three"
+		"one four three"
+		"eight two five"
+		"eight two five"
+		"six six six"
+		"six six six"
 
-@media (min-width: 540px) {
+	}
+}
+
+@media (min-width: 768px) {
   .bento-grid {
     margin-inline: auto;
     grid-auto-rows: 75px;
