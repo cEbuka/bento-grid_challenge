@@ -141,6 +141,8 @@ img {
 }
 
 .bento-grid .bento-item:nth-child(2) {
+	display: flex;
+	flex-flow: column;
   padding: 1rem;
 }
 
