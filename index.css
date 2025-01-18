@@ -289,8 +289,7 @@ img {
       "eight six five five";
   }
 
-  .bento-item:nth-child(5) {
-    flex-direction: row;
-    justify-content: none;
+ .bento-grid .bento-item:nth-child(5) {
+    display: inline-block;
   }
 }
