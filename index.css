@@ -272,6 +272,7 @@ img {
 
 @media (min-width: 768px) {
   .bento-grid {
+    padding: 8rem;
     margin-inline: auto;
     grid-auto-rows: 75px;
     grid-auto-columns: 1fr;
