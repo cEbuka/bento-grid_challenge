@@ -39,7 +39,7 @@ html:focus-within {
 
 body {
   display: grid;
-  place-items: center;
+  place-content: center;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1;
@@ -294,7 +294,7 @@ img {
        position: absolute;
        width: 450px;
        right: 0;
-       
+
   }
 
  .bento-grid .bento-item:nth-child(5) {
