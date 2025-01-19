@@ -290,6 +290,7 @@ img {
   }
 
  .bento-grid .bento-item:nth-child(5) {
-    display: inline-block;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
   }
 }
