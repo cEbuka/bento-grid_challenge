@@ -292,7 +292,9 @@ img {
 
   .bento-grid .bento-item:nth-child(4)img {
        position: absolute;
-       width: 250px;
+       width: 450px;
+       right: 0;
+       
   }
 
  .bento-grid .bento-item:nth-child(5) {
