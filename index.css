@@ -165,6 +165,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  position: relative;
 }
 
 .bento-grid .bento-item:nth-child(4) img {
@@ -287,6 +288,11 @@ img {
       "eight six five five"
       "eight six five five"
       "eight six five five";
+  }
+
+  .bento-grid .bento-item:nth-child(4)img {
+       position: absolute;
+       width: 250px;
   }
 
  .bento-grid .bento-item:nth-child(5) {
