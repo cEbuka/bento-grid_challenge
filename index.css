@@ -173,6 +173,7 @@ img {
 }
 
 .bento-grid .bento-item:nth-child(5) {
+  display: flex;
   padding-inline: 2rem;
   padding-block: 1rem;
 
@@ -269,8 +270,7 @@ img {
 @media (min-width: 768px) {
   .bento-grid {
     padding: 8rem;
-    margin-inline: auto;
-    grid-auto-rows: 4rem;
+    grid-auto-rows: 50px;
     grid-template-areas:
       "seven one one four"
       "seven one one four"
