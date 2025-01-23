@@ -173,13 +173,13 @@ img {
 }
 
 .bento-grid .bento-item:nth-child(5) {
-  display: flex;
   padding-inline: 2rem;
   padding-block: 1rem;
 
 }
 
 .bento-grid .bento-item:nth-child(5) img {
+  margin-inline: auto;
   width: 150px;
 }
 
@@ -291,8 +291,14 @@ img {
 
   }
 
+  .bento-grid .bento-item:nth-child(4) img{
+    height: 80%;
+
+  } 
+
  .bento-grid .bento-item:nth-child(5) {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    place-items: center;
+    text-align: center;
   }
 }
