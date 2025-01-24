@@ -141,8 +141,8 @@ img {
 }
 
 .bento-grid .bento-item:nth-child(2) {
-	display: flex;
-	flex-flow: column;
+  display: flex;
+  flex-flow: column;
   padding: 1rem;
 }
 
@@ -164,13 +164,12 @@ img {
 }
 
 .bento-grid .bento-item:nth-child(4) img {
-  width: 250px;
+ width: 250px;
 }
 
 .bento-grid .bento-item:nth-child(5) {
   padding-inline: 2rem;
   padding-block: 1rem;
-
 }
 
 .bento-grid .bento-item:nth-child(5) img {
@@ -248,18 +247,17 @@ img {
 
 /* For tabs */
 @media (min-width: 500px) {
-	.bento-grid {
-		grid-template-areas:
-		"seven seven seven"
-		"seven seven seven"
-		"one four three"
-		"one four three"
-		"eight two five"
-		"eight two five"
-		"six six six"
-		"six six six"
-
-	}
+  .bento-grid {
+    grid-template-areas:
+      "seven seven seven"
+      "seven seven seven"
+      "one four three"
+      "one four three"
+      "eight two five"
+      "eight two five"
+      "six six six"
+      "six six six";
+  }
 }
 
 @media (min-width: 768px) {
@@ -279,15 +277,15 @@ img {
       "eight six five five";
   }
 
-
-  .bento-grid .bento-item:nth-child(4) img{
-    height: 60%;
+  .bento-grid .bento-item:nth-child(4) img {
     position: absolute;
+    height: 70%;
     right: 0;
+    object-position: left;
+    object-fit: cover;
+  }
 
-  } 
-
- .bento-grid .bento-item:nth-child(5) {
+  .bento-grid .bento-item:nth-child(5) {
     display: flex;
     place-items: center;
     text-align: center;
