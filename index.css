@@ -256,6 +256,28 @@ img {
 
 /* For tabs */
 @media (min-width: 500px) {
+  /* Typography */
+
+  .xlg-text {
+    font-size: var(--xlg);
+    font-weight: var(--fw-500);
+  }
+
+  .lg-text {
+    font-size: var(--lg);
+    font-weight: var(--fw-500);
+  }
+
+  .med-text {
+    font-size: var(--med);
+    font-weight: var(--fw-500);
+  }
+
+  .sm-text {
+    font-size: var(--sm);
+    font-weight: var(--fw-400);
+  }
+
   .bento-grid {
     grid-template-areas:
       "seven seven seven"
@@ -273,7 +295,7 @@ img {
   .bento-grid {
     padding: 8rem;
     overflow: hidden;
-    grid-auto-rows: minmax(60px, auto);
+    grid-auto-rows: minmax(1fr, auto);
     grid-template-areas:
       "seven one one four"
       "seven one one four"
@@ -292,13 +314,9 @@ img {
     height: 60%;
     right: 0;
     top: 80px;
+    bottom: 80px;
     object-position: left;
     object-fit: cover;
-  }
-
-  .bento-grid .bento-item:nth-child(4) p {
-    margin-top: 1.5rem;
-
   }
 
   .bento-grid .bento-item:nth-child(5) {
