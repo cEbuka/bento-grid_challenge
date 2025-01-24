@@ -157,14 +157,23 @@ img {
 }
 
 .bento-grid .bento-item:nth-child(4) {
-  padding-inline: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 1.5rem;
   padding-block: 1.2rem;
   text-align: center;
   position: relative;
 }
 
+.bento-grid .bento-item:nth-child(4) p {
+  margin-top: 1.2rem;
+}
+
 .bento-grid .bento-item:nth-child(4) img {
- width: 250px;
+  padding-left: 1rem;
+  margin-top: 1.2rem;
 }
 
 .bento-grid .bento-item:nth-child(5) {
@@ -263,7 +272,8 @@ img {
 @media (min-width: 768px) {
   .bento-grid {
     padding: 8rem;
-    grid-auto-rows: 50px;
+    overflow: hidden;
+    grid-auto-rows: minmax(50px, auto);
     grid-template-areas:
       "seven one one four"
       "seven one one four"
@@ -279,8 +289,9 @@ img {
 
   .bento-grid .bento-item:nth-child(4) img {
     position: absolute;
-    height: 70%;
+    height: 60%;
     right: 0;
+    top: 80px;
     object-position: left;
     object-fit: cover;
   }
