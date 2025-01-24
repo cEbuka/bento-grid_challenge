@@ -291,7 +291,7 @@ img {
   .bento-grid {
     padding: 8rem;
     overflow: hidden;
-    grid-auto-rows: minmax(1fr, auto);
+    grid-auto-rows: auto;
     grid-template-areas:
       "seven one one four"
       "seven one one four"
