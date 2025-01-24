@@ -161,19 +161,15 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  gap: 2rem;
   padding-inline: 1.5rem;
   padding-block: 1.2rem;
   text-align: center;
   position: relative;
 }
 
-.bento-grid .bento-item:nth-child(4) p {
-  margin-top: 1.2rem;
-}
-
 .bento-grid .bento-item:nth-child(4) img {
   padding-left: 1rem;
-  margin-top: 1.2rem;
 }
 
 .bento-grid .bento-item:nth-child(5) {
@@ -311,9 +307,9 @@ img {
 
   .bento-grid .bento-item:nth-child(4) img {
     position: absolute;
-    height: 60%;
+    height: 50%;
     right: 0;
-    top: 80px;
+    top: 100px;
     bottom: 80px;
     object-position: left;
     object-fit: cover;
@@ -323,5 +319,18 @@ img {
     display: flex;
     place-items: center;
     text-align: center;
+  }
+
+  .bento-grid .bento-item:nth-child(7) {
+    display: grid;
+    place-items: center;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .bento-grid .bento-item:nth-child(8) {
+    padding-bottom: 0rem;
+  }
+  .bento-grid .bento-item:nth-child(8) img {
+    width: 100%;
   }
 }
