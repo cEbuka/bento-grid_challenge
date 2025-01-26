@@ -162,11 +162,10 @@ img {
   justify-content: space-between;
   padding: 1.2rem 1.5rem;
   text-align: center;
-}
-
-.img-container-4 {
   position: relative;
 }
+
+
 
 .bento-grid .bento-item:nth-child(5) {
   padding-inline: 2rem;
