@@ -135,9 +135,14 @@ img {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-}
-.bento-grid .bento-item:nth-child(1) img {
-  width: 150px;
+  padding: 3rem;
+
+  img {
+    width: 150px;
+    @media screen and (min-width: 768px) {
+      max-width: 100%;
+    }
+  }
 }
 
 .bento-grid .bento-item:nth-child(2) {
@@ -149,30 +154,41 @@ img {
 .bento-grid .bento-item:nth-child(3) {
   padding-inline: 1rem;
   padding-top: 1rem;
-}
 
-.bento-grid .bento-item:nth-child(3) img {
-  margin-top: 1rem;
-  width: 150px;
+  img {
+    margin-top: 1rem;
+    width: 150px;
+  }
 }
 
 .bento-grid .bento-item:nth-child(4) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 1.2rem 1.5rem;
   text-align: center;
   position: relative;
+
+  img {
+    width: 300px;
+    @media screen and (min-width: 768px) {
+      max-width: 100%;
+      height: 250px;
+      text-align: left;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      padding-left: 1.5rem;
+    }
+  }
 }
 
 .bento-grid .bento-item:nth-child(5) {
   padding-inline: 2rem;
   padding-block: 1rem;
-}
 
-.bento-grid .bento-item:nth-child(5) img {
-  margin-inline: auto;
-  width: 150px;
+  img {
+    margin-inline: auto;
+    width: 150px;
+  }
 }
 
 .bento-grid .bento-item:nth-child(6) {
@@ -238,7 +254,7 @@ img {
 }
 
 /* For tabs */
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
   .bento-grid {
     grid-template-areas:
       "seven seven seven"
@@ -250,44 +266,31 @@ img {
       "six six six"
       "six six six";
   }
-}
+} */
 
 @media (min-width: 768px) {
   .bento-grid {
     padding: 8rem;
-    overflow: hidden;
-    grid-auto-rows: minmax(60px, auto);
+
     grid-template-areas:
-      "seven one one four"
-      "seven one one four"
-      "seven one one four"
       "seven one one four"
       "seven two three four"
       "eight two three four"
-      "eight two three four"
-      "eight six five five"
-      "eight six five five"
       "eight six five five";
   }
 
   .bento-grid .bento-item:nth-child(4) {
     text-align: left;
   }
-  
-  .bento-grid .bento-item:nth-child(4) img {
+
+  /* .bento-grid .bento-item:nth-child(4) img {
     height: 300px;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     padding-left: 1.5rem;
-  }
-
-  .bento-grid .bento-item:nth-child(4) p {
-   position: absolute;
-   bottom: 0;
-   padding-bottom: 0.5rem;
-  }
+  } */
 
   .bento-grid .bento-item:nth-child(5) {
     display: flex;
